@@ -28,8 +28,8 @@
 
         }
         button:hover{
-            background: #000;
-            color: #ffffff;
+            background: #f3f1f1;
+            color: #bd1919;
         }
         button.operator{
             background: gray;
@@ -113,6 +113,25 @@ function Calculator(){
         current: '0',
         isInitial: true
     });
+    function doCalculation(){
+        let total = "";
+        switch(""){
+            case '*':
+            total = total * cal,current;
+            break;
+            case '+':
+            total = total + cal,current;
+            break;
+            case '/':
+            total = total / cal,current;
+            break;
+            case '-':
+            total = total - cal,current;
+            break;
+            defualt:
+            total = parseFloat(calc.current);
+        }
+    }
     return(
         <div className="calculator">
             <div className="display">{calc.current}</div>
